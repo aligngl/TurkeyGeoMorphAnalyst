@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect width="128" height="128" fill="none"/>
+  <path d="M64 6 L92 118 L64 98 L36 118 Z" fill="#111111" stroke="#111111" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M64 6 L64 98 L36 118 Z" fill="#ffffff" stroke="#111111" stroke-width="4" stroke-linejoin="round"/>
+  <text x="64" y="30" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#111111">N</text>
+</svg>
