@@ -1,0 +1,16 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.16">
+  <Layout name="TurkeyGeoMorph A4" units="mm">
+    <PageCollection>
+      <symbol type="fill" name="">
+        <layer class="SimpleFill"><prop k="color" v="255,255,255,255"/></layer>
+      </symbol>
+      <LayoutItem type="65638" templateUuid="{a4-page}" size="297,210,mm" position="0,0,mm" referencePoint="0" page="0"/>
+    </PageCollection>
+    <LayoutItem type="65639" id="title" position="12,8,mm" size="180,12,mm" frame="false">
+      <Label text="TurkeyGeoMorph Analyst"/>
+    </LayoutItem>
+    <LayoutItem type="65640" id="main_map" position="12,24,mm" size="230,150,mm" frame="true"/>
+    <LayoutItem type="65642" id="legend" position="248,28,mm" size="38,80,mm" frame="true"/>
+  </Layout>
+</qgis>
