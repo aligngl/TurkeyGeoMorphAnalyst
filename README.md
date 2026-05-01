@@ -252,3 +252,4 @@ Powered By AGLSOFT - Ali Ganigülü™
 ## Lisans
 
 Bu proje akademik çalışma, eğitim ve tez haritalama süreçlerinde kullanılmak üzere hazırlanmıştır. Kullanım ve dağıtım koşullarını belirlemek için depoya ayrıca bir `LICENSE` dosyası eklenmesi önerilir.
+
