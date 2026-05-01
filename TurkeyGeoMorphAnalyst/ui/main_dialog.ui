@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TurkeyGeoMorphDialog</class>
+ <widget class="QDialog" name="TurkeyGeoMorphDialog">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>980</width><height>680</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>TurkeyGeoMorph Analyst</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <widget class="QWidget" name="tabWorkspace">
+      <attribute name="title"><string>📍 Çalışma Alanı</string></attribute>
+      <layout class="QGridLayout" name="workspaceGrid">
+       <item row="0" column="0"><widget class="QLabel" name="labelProvince"><property name="text"><string>İl</string></property></widget></item>
+       <item row="0" column="1"><widget class="QComboBox" name="cmbProvince"/></item>
+       <item row="1" column="0"><widget class="QLabel" name="labelDistrict"><property name="text"><string>İlçe</string></property></widget></item>
+       <item row="1" column="1"><widget class="QComboBox" name="cmbDistrict"/></item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QGroupBox" name="groupBoundary">
+         <property name="title"><string>Sınır türü</string></property>
+         <layout class="QHBoxLayout" name="boundaryLayout">
+          <item><widget class="QRadioButton" name="radioProvinceBoundary"><property name="text"><string>İl sınırı</string></property><property name="checked"><bool>true</bool></property></widget></item>
+          <item><widget class="QRadioButton" name="radioDistrictBoundary"><property name="text"><string>İlçe sınırı</string></property></widget></item>
+          <item><widget class="QRadioButton" name="radioManualBoundary"><property name="text"><string>Manuel sınır</string></property></widget></item>
+         </layout>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="2"><widget class="QPushButton" name="btnShowBoundary"><property name="text"><string>Sınırı Haritada Göster</string></property></widget></item>
+       <item row="4" column="0"><widget class="QLabel" name="labelOutput"><property name="text"><string>Çıktı klasörü</string></property></widget></item>
+       <item row="4" column="1"><widget class="QLineEdit" name="lineOutputFolder"/></item>
+       <item row="4" column="2"><widget class="QPushButton" name="btnBrowseOutput"><property name="text"><string>Seç</string></property></widget></item>
+       <item row="5" column="0"><widget class="QLabel" name="labelProject"><property name="text"><string>Proje adı</string></property></widget></item>
+       <item row="5" column="1" colspan="2"><widget class="QLineEdit" name="lineProjectName"/></item>
+       <item row="0" column="3" rowspan="7"><widget class="QgsMapCanvas" name="mapCanvas"/></item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabDownload">
+      <attribute name="title"><string>🛰️ Veri İndirme</string></attribute>
+      <layout class="QVBoxLayout" name="downloadLayout">
+       <item>
+        <widget class="QGroupBox" name="groupDemSource">
+         <property name="title"><string>DEM Kaynağı Seçimi</string></property>
+         <layout class="QGridLayout" name="demSourceLayout">
+          <item row="0" column="0"><widget class="QRadioButton" name="radioCopernicus"><property name="text"><string>Copernicus DEM GLO-30 — 30m | ESA/AWS | kimliksiz</string></property><property name="checked"><bool>true</bool></property></widget></item>
+          <item row="0" column="1"><widget class="QRadioButton" name="radioOpenTopo30"><property name="text"><string>OpenTopography — 30m | COP30 | API key gerekli</string></property></widget></item>
+          <item row="1" column="0"><widget class="QRadioButton" name="radioOpenTopo90"><property name="text"><string>OpenTopography — 90m | SRTMGL3 | API key gerekli</string></property></widget></item>
+          <item row="1" column="1"><widget class="QRadioButton" name="radioTandemx"><property name="text"><string>TanDEM-X 90m | DLR | manuel indirilen dosya</string></property></widget></item>
+          <item row="2" column="0"><widget class="QRadioButton" name="radioLocalDem"><property name="text"><string>Yerel DEM Dosyası — kendi verinizi kullanın</string></property></widget></item>
+         </layout>
+        </widget>
+       </item>
+       <item><widget class="QGroupBox" name="groupCredentials"><property name="title"><string>Kimlik Bilgileri</string></property></widget></item>
+       <item><widget class="QGroupBox" name="groupOsm"><property name="title"><string>OSM Akarsu Verisi (Geofabrik)</string></property></widget></item>
+       <item><widget class="QLabel" name="labelDownloadStatus"><property name="text"><string>Hazır</string></property></widget></item>
+       <item><widget class="QProgressBar" name="downloadProgress"/></item>
+       <item><widget class="QPushButton" name="btnDownloadData"><property name="text"><string>Verileri İndir</string></property></widget></item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabMaps">
+      <attribute name="title"><string>🗺️ Harita Üretimi</string></attribute>
+      <layout class="QVBoxLayout" name="mapsOuterLayout">
+       <item>
+        <widget class="QTabWidget" name="mapsTabs">
+         <widget class="QWidget" name="tabElevation"><attribute name="title"><string>Yükselti</string></attribute></widget>
+         <widget class="QWidget" name="tabHillshade"><attribute name="title"><string>Hillshade</string></attribute></widget>
+         <widget class="QWidget" name="tabSlope"><attribute name="title"><string>Eğim</string></attribute></widget>
+         <widget class="QWidget" name="tabAspect"><attribute name="title"><string>Bakı</string></attribute></widget>
+         <widget class="QWidget" name="tabCurvature"><attribute name="title"><string>Eğrisellik</string></attribute></widget>
+         <widget class="QWidget" name="tabTwi"><attribute name="title"><string>TWI</string></attribute></widget>
+         <widget class="QWidget" name="tabRivers"><attribute name="title"><string>Akarsu Ağı</string></attribute></widget>
+         <widget class="QWidget" name="tabGeomorphons"><attribute name="title"><string>Morfolojik Birimler</string></attribute></widget>
+         <widget class="QWidget" name="tabTpi"><attribute name="title"><string>TPI</string></attribute></widget>
+         <widget class="QWidget" name="tabRelief"><attribute name="title"><string>Rölyef Enerjisi</string></attribute></widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabLayout"><attribute name="title"><string>📐 Harita Düzeni</string></attribute></widget>
+     <widget class="QWidget" name="tabExport"><attribute name="title"><string>💾 Dışa Aktarma</string></attribute></widget>
+     <widget class="QWidget" name="tabReport"><attribute name="title"><string>📊 İstatistik &amp; Rapor</string></attribute></widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsMapCanvas</class>
+   <extends>QWidget</extends>
+   <header>qgis.gui</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
