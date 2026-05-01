@@ -142,10 +142,10 @@ Rapor içeriği çalışma alanına göre şu başlıkları destekler:
 
 1. `TurkeyGeoMorphAnalyst.zip` dosyasını indirin.
 2. QGIS'i açın.
-3. `Eklentiler > Eklentileri Yönet ve Kur > ZIP'ten kur` yolunu izleyin.
+3. İngilizce QGIS arayüzünde `Plugins > Manage and Install Plugins > Install from ZIP` yolunu izleyin.
 4. ZIP dosyasını seçin.
 5. Eklentiyi etkinleştirin.
-6. Araç çubuğundan `TurkeyGeoMorph Analyst` panelini açın.
+6. Eklentiyi QGIS ana menüsünde `Raster > TurkeyGeoMorph Analyst` altından veya araç çubuğundaki `TurkeyGeoMorph Analyst` ikonundan açın.
 
 Alternatif manuel kurulum:
 
@@ -157,7 +157,8 @@ Alternatif manuel kurulum:
    ```
 
 3. QGIS'i yeniden başlatın.
-4. Eklentiyi `Eklentiler` menüsünden etkinleştirin.
+4. Eklentiyi `Plugins > Manage and Install Plugins` menüsünden etkinleştirin.
+5. Eklentiyi kullanmak için `Raster > TurkeyGeoMorph Analyst` menüsünü açın.
 
 ## Sistem Gereksinimleri
 
@@ -252,4 +253,3 @@ Powered By AGLSOFT - Ali Ganigülü™
 ## Lisans
 
 Bu proje akademik çalışma, eğitim ve tez haritalama süreçlerinde kullanılmak üzere hazırlanmıştır. Kullanım ve dağıtım koşullarını belirlemek için depoya ayrıca bir `LICENSE` dosyası eklenmesi önerilir.
-
