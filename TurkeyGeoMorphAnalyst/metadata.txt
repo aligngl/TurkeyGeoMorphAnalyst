@@ -1,0 +1,18 @@
+[general]
+name=TurkeyGeoMorph Analyst
+qgisMinimumVersion=3.16
+qgisMaximumVersion=3.99
+description=Türkiye illeri için otomatik jeomorfoloji harita üretim sistemi
+version=1.0.0
+author=Ali Ganigülü
+email=aliganigulu44@gmail.com
+about=Bu eklenti lisans, yüksek lisans ve doktora öğrencilerinin jeomorfoloji tezleri için Türkiye'nin herhangi bir ilinde otomatik DEM analizi, yükselti, eğim, bakı, eğrisellik, TWI, hillshade, morfolojik birimler, TPI ve rölyef enerjisi haritaları üretir. 9 farklı DEM kaynağı ve Geofabrik OSM akarsu verisi entegrasyonu içerir. Sadece QGIS kurulumu yeterlidir.
+tracker=https://github.com/turkeygeomorph/issues
+repository=https://github.com/turkeygeomorph/TurkeyGeoMorphAnalyst
+tags=dem,jeomorfoloji,eğim,bakı,hillshade,akarsu,türkiye,morfometri,srtm,aster
+homepage=https://github.com/turkeygeomorph
+category=Raster
+icon=resources/icons/plugin_icon.png
+experimental=False
+deprecated=False
+hasProcessingProvider=False
