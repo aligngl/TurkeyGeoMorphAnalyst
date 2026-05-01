@@ -23,3 +23,4 @@ Geliştirici: Ali Ganigülü
 Powered By AGLSOFT - Ali Ganigülü™
 
 #QGIS #GIS #Geomorphology #Jeomorfoloji #Coğrafya #DEM #RemoteSensing #OpenSource #AkademikÇalışma #Tez
+
