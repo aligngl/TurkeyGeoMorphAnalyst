@@ -1,0 +1,13 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.16">
+  <Layout name="TurkeyGeoMorph A3" units="mm">
+    <PageCollection>
+      <LayoutItem type="65638" templateUuid="{a3-page}" size="420,297,mm" position="0,0,mm" referencePoint="0" page="0"/>
+    </PageCollection>
+    <LayoutItem type="65639" id="title" position="16,10,mm" size="260,14,mm" frame="false">
+      <Label text="TurkeyGeoMorph Analyst"/>
+    </LayoutItem>
+    <LayoutItem type="65640" id="main_map" position="16,30,mm" size="335,220,mm" frame="true"/>
+    <LayoutItem type="65642" id="legend" position="360,34,mm" size="48,100,mm" frame="true"/>
+  </Layout>
+</qgis>
