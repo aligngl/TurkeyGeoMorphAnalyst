@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProgressDialog</class>
+ <widget class="QDialog" name="ProgressDialog">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>520</width><height>180</height></rect>
+  </property>
+  <property name="windowTitle"><string>İşlem Durumu</string></property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item><widget class="QLabel" name="labelStatus"><property name="text"><string>Hazır</string></property></widget></item>
+   <item><widget class="QProgressBar" name="progressBar"/></item>
+   <item><widget class="QTextEdit" name="textLog"><property name="readOnly"><bool>true</bool></property></widget></item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
